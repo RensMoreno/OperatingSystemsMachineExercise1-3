@@ -1,6 +1,3 @@
-/* ME2-B (child program): the "other source" that the child will load.
- * Compile: gcc me2b_child.c -o counter
- */
 #include <stdio.h>
 #include <unistd.h>
 

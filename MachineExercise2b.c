@@ -1,7 +1,3 @@
-/* ME2-B (parent program): fork(), exec the child binary, wait() for it.
- * Compile: gcc me2b.c -o me2b   (and build ./counter first, see me2b_child.c)
- * Run:     ./me2b
- */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
