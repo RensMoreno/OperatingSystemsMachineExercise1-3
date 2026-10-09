@@ -3,11 +3,13 @@
 
 int main(void)
 {
-    printf("[CHILD]: PID %d, starts counting:\n", getpid());
+    printf("[CHILD]: PID %ld, starts counting:\n", (long)getpid());
     for (int i = 1; i <= 10; i++) {
         printf("[CHILD]: i = %d\n", i);
         fflush(stdout);
-        sleep(1);
+        if (i < 10) {
+            sleep(1);
+        }
     }
     return 0;
 }
